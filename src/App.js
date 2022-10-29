@@ -24,6 +24,20 @@ function App() {
       <div className="logo">
         <h1>LOGO</h1>
       </div>
+      <div className="checkoutcont">
+        <h1>GOD T-Shirt</h1>
+        <h2>$40.50</h2>
+        <p>select size</p>
+        <ul>
+          <li>XS</li>
+          <li>S</li>
+          <li>M</li>
+          <li>L</li>
+          <li>XL</li>
+          <li>XXL</li>
+        </ul>
+        <button>CHECK OUT</button>
+      </div>
       <div className="canv">
         <Canvas>
           <OrbitControls />

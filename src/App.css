@@ -5,6 +5,10 @@ body{
   background: #171717;
 }
 .canv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -300px;
   width: 100vw;
   height: 100vh;
 }
@@ -15,6 +19,57 @@ body{
   top: 2vh;
   left: 3vw;
 }
+.checkoutcont {
+  position: absolute;
+  top:20vh;
+  right: -150px;
+  /* transform: translate(0, -50%); */
+  width: 50vw;
+z-index: 2;
+}
+.checkoutcont h1 {
+  color: rgb(230, 230, 230);
+  font-size: 80px;
+}
+.checkoutcont h2 {
+  color: rgb(168, 168, 168);
+  font-size: 40px;
+  margin-top: -35px;
+}
+.checkoutcont p {
+  color: rgb(168, 168, 168);
+}
+.checkoutcont ul {
+  list-style: none;
+  display: flex;
+  align-items: left;
+  color: rgb(230, 230, 230);
+  margin-left: -58px;
+  margin-top: -11px;
+}
+.checkoutcont ul li{
+  margin-left: 20px;
+
+}
+.checkoutcont button {
+  z-index: 2;
+  padding: 15px 173px;
+  background: rgb(230, 230, 230);;
+  color:#171717;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+.checkoutcont button:hover{
+  color: rgb(230, 230, 230);
+  background: #171717;
+  cursor: pointer;
+  border: 2px solid rgb(230, 230, 230);
+  
+}
+
+
+
 
 
 
