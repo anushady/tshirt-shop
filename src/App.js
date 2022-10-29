@@ -1,5 +1,5 @@
-import React, { Suspence } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import React from "react";
+import { Canvas } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 import { OrbitControls } from "@react-three/drei";
 import "./App.css";
