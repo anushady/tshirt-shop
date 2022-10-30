@@ -7,7 +7,7 @@ import "./App.css";
 function Model(props) {
   const { nodes, materials } = useGLTF("/tshirt.glb");
   return (
-    <group {...props} dispose={null} scale={0.05}>
+    <group {...props} dispose={null} scale={0.045}>
       <mesh
         geometry={nodes.OneGodobj.geometry}
         material={materials["Default.001"]}
@@ -25,23 +25,26 @@ function App() {
         <h1>LOGO</h1>
       </div>
       <div className="checkoutcont">
-        <h1>GOD T-Shirt</h1>
-        <h2>$40.50</h2>
-        <p>select size</p>
-        <ul>
-          <li>XS</li>
-          <li>S</li>
-          <li>M</li>
-          <li>L</li>
-          <li>XL</li>
-          <li>XXL</li>
-        </ul>
-        <button>CHECK OUT</button>
+        <h1>GOD TEE</h1>
+        <h2>$50</h2>
+        <div id="sizecont">
+          <label for="Sizes">Sizes</label><br />
+          <div id="select">
+          <select name="size" id="sizes">
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+          </div>
+          <button>BUY</button>
+        </div>
       </div>
       <div className="canv">
         <Canvas>
           <OrbitControls />
-          <ambientLight intensity={0.6} />
+          <ambientLight intensity={0.8} color={"#ffffed"} />
           <directionalLight intensity={0.5} />
           <directionalLight intensity={0.9} />
           <directionalLight intensity={1} />
