@@ -12,12 +12,12 @@ body{
   width: 100vw;
   height: 100vh;
 }
-.logo {
-  color:#171717;
+.logo img{
+
   position: absolute;
-  font-size: 1.5em;
-  top: 2vh;
-  left: 3vw;
+  width: 130px;
+  top: 5vh;
+  left: 5vw;
 }
 #idcont{
   display: flex;
@@ -92,9 +92,12 @@ label{
   border: 2px solid rgb(89, 89, 89);
 }
 @media (max-width: 500px) {
-  .logo {
-    font-size: 1.1em;
-    top: 1.5vh;
+  .canv{
+    margin-top: -80px;
+  }
+  .logo img {
+    width: 100px;
+    top: 2vh;
     left: 50vw;
     transform: translate(-50%, 0);
   }

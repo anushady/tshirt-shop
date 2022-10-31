@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <div className="logo">
-        <h1>LOGO</h1>
+        <img src="logo.PNG" alt="" />
       </div>
       <div className="checkoutcont">
         <h1>GOD TEE</h1>
