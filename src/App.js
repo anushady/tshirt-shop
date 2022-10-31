@@ -24,6 +24,9 @@ function App() {
       <div className="logo">
         <img src="logo.PNG" alt="" />
       </div>
+      <div id="cart" >
+        <img src="cart.png" alt="" />
+      </div>
       <div className="checkoutcont">
         <h1>GOD TEE</h1>
         <h2>$50</h2>

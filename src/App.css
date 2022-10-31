@@ -19,6 +19,12 @@ body{
   top: 5vh;
   left: 5vw;
 }
+#cart img{
+  width: 80px;
+  position: absolute;
+  top: 6vh;
+  right: 5vw;
+}
 #idcont{
   display: flex;
   align-items: left;
