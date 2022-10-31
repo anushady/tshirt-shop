@@ -91,7 +91,17 @@ label{
   cursor: pointer;
   border: 2px solid rgb(89, 89, 89);
 }
-
+@media (max-width: 500px) {
+  .logo {
+    font-size: 1.1em;
+    top: 1.5vh;
+    left: 50vw;
+    transform: translate(-50%, 0);
+  }
+  .checkoutcont {
+    bottom: 20px;
+  }
+}
 
 
 
