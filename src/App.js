@@ -7,7 +7,9 @@ import "./App.css";
 function Model(props) {
   const { nodes, materials } = useGLTF("/tshirt.glb");
   return (
-    <group {...props} dispose={null} scale={0.045}>
+    
+    <group {...props} dispose={null}  scale={0.04}>
+      
       <mesh
         geometry={nodes.OneGodobj.geometry}
         material={materials["Default.001"]}
@@ -17,6 +19,7 @@ function Model(props) {
     </group>
   );
 }
+
 
 function App() {
   return (

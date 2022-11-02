@@ -100,11 +100,11 @@ label{
 }
 @media (max-width: 500px) {
   .canv{
-    margin-top: -80px;
+    margin-top: -30px;
   }
   .logo img {
     width: 100px;
-    top: 2vh;
+    top: 3vh;
     left: 50vw;
     transform: translate(-50%, 0);
   }
@@ -119,9 +119,16 @@ label{
   }
   .checkoutcont button {
     font-size: 15px;
+    padding:8px 70px;
   }
   #sizecont {
     padding: 1px 37px;
+  }
+  #cart img{
+    width: 40px;
+    position: absolute;
+    top: 2vh;
+    right: 5vw;
   }
 }
 
