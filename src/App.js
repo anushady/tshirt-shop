@@ -31,7 +31,7 @@ function App() {
         <h1>GOD TEE</h1>
         <h2>$50</h2>
         <div id="sizecont">
-          <label for="Sizes">Sizes</label><br />
+          <label for="Sizes">Sizes:</label><br />
           <div id="select">
           <select name="size" id="sizes">
             <option value="xs">XS</option>
@@ -41,8 +41,9 @@ function App() {
             <option value="xxl">XXL</option>
           </select>
           </div>
-          <button>BUY</button>
+          
         </div>
+        <button>BUY</button>
       </div>
       <div className="canv">
         <Canvas>
