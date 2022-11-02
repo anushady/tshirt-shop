@@ -19,7 +19,14 @@ function Model(props) {
     </group>
   );
 }
+function Hover(){
 
+var searchbar = document.getElementById("searchbar")
+
+  searchbar.style.display = "block";
+  console.log("mouseenter")
+
+}
 
 function App() {
   return (
@@ -27,14 +34,26 @@ function App() {
       <div className="logo">
         <img src="logo.PNG" alt="" />
       </div>
-      <div id="cart" >
-        <img src="cart.png" alt="" />
+      <div id="iconcont">
+        <div id="cart" >
+          <img src="Shopping.svg" alt="" />
+        </div>
+        <div id="search" >
+        
+          <form action="">
+            
+            {/* <button type="submit">Search</button> */}
+            <button type="submit" id="searchbtn" onMouseEnter={Hover}><img src="search.svg" alt="" /></button>
+            <input type="text" placeholder="Search.." name="search" id="searchbar" />
+          </form>
+        </div>
+        
       </div>
       <div className="checkoutcont">
         <h1>GOD TEE</h1>
         <h2>$50</h2>
         <div id="sizecont">
-          <label for="Sizes">Sizes:</label><br />
+          <label htmlFor="Sizes">Sizes:</label><br />
           <div id="select">
           <select name="size" id="sizes">
             <option value="xs">XS</option>
@@ -58,9 +77,13 @@ function App() {
 
           <Model />
         </Canvas>
+        
       </div>
+      
     </>
+    
   );
+
 }
 
 export default App;
