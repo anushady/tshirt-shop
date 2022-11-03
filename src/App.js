@@ -8,13 +8,14 @@ function Model(props) {
   const { nodes, materials } = useGLTF("/tshirt.glb");
   return (
     
-    <group {...props} dispose={null}  scale={0.04}>
+    <group {...props} dispose={null}  >
       
       <mesh
         geometry={nodes.OneGodobj.geometry}
         material={materials["Default.001"]}
         position={[0.09, -0.27, -0.07]}
         rotation={[0, -Math.PI / 2, 0]}
+        scale={0.04}
       />
     </group>
   );
@@ -43,7 +44,7 @@ function App() {
           <form action="">
             
             {/* <button type="submit">Search</button> */}
-            <button type="submit" id="searchbtn" onMouseEnter={Hover}><img src="search.svg" alt="" /></button>
+            <button type="submit" id="searchbtn" onMouseEnter={Hover}><img src="lens.png" alt="" /></button>
             <input type="text" placeholder="Search.." name="search" id="searchbar" />
           </form>
         </div>
@@ -55,13 +56,15 @@ function App() {
         <div id="sizecont">
           <label htmlFor="Sizes">Sizes:</label><br />
           <div id="select">
-          <select name="size" id="sizes">
-            <option value="xs">XS</option>
-            <option value="s">S</option>
-            <option value="l">L</option>
-            <option value="xl">XL</option>
-            <option value="xxl">XXL</option>
-          </select>
+            <ul name="size" id="sizes">
+              <li value="xs">XS</li>
+              <li value="s">S</li>
+              <li value="m">M</li>
+              <li value="l">L</li>
+              <li value="xl">XL</li>
+              <li value="xxl">XXL</li>
+            </ul>
+ 
           </div>
           
         </div>
@@ -75,7 +78,7 @@ function App() {
           <directionalLight intensity={0.9} />
           <directionalLight intensity={1} />
 
-          <Model />
+          <Model scale={window.innerWidth>500?1 : 0.8} />
         </Canvas>
         
       </div>
