@@ -15,7 +15,7 @@ body{
 .logo img{
 
   position: absolute;
-  width: 130px;
+  width: 100px;
   top: 5vh;
   left: 5vw;
 }
@@ -36,7 +36,7 @@ body{
   /* right: 5vw; */
 }
 #search img{
-  width: 50px;
+  width: 45px;
   cursor: pointer;
   /* position: absolute; */
   /* top: 6vh; */
@@ -63,7 +63,9 @@ input[type=text] {
   border: none;
   cursor: pointer;
 }
-
+select {
+  display: flex;
+}
 /* form button img{
   align-items: center;
   width: 0px;
@@ -84,7 +86,8 @@ form {
   transform: translate(-50%, 0);
   /* width: 50vw; */
   z-index: 2;
-  display: block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -112,26 +115,29 @@ form {
   align-items: left;
   color: #171717;
   margin-left: -58px;
-  margin-top: -11px;
+  margin-top: 0px;
 }
 .checkoutcont ul li{
-  margin-left: 20px;
+  margin-left: 18px;
+  cursor: pointer;
 }
 .checkoutcont button {
   z-index: 2;
-  padding: 10px 70px;
+  padding: 10px 50px;
   border-radius: 13px;
   background:#171717;
   color:#ffffff;
   font-size: 17px;
   font-weight: bolder;
   margin-top: 13px;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 label{
   margin-right: 10px;
+  font-weight: bold;
 }
 #sizecont {
   display: flex;
@@ -150,7 +156,7 @@ label{
     margin-top: -30px;
   }
   .logo img {
-    width: 100px;
+    width: 65px;
     top: 7vh;
     left: 50vw;
     transform: translate(-50%, 0);
@@ -187,13 +193,13 @@ label{
     position: absolute;
     top: 3vh;
     left: 5vw;
-    width: 40px;
+    width: 28px;
   }
   #cart img{
     position: absolute;
     top: 3vh;
     right: 5vw;
-    width: 40px;
+    width: 28px;
   }
   input[type=text]{
     position: absolute;
@@ -201,6 +207,18 @@ label{
     left: 17vw;
     margin-left: 0px;
     padding: 5px 10px;
+  }
+  #sizecont{
+    padding: 0px 10px;
+    align-items: center;
+  }
+  .checkoutcont ul li{
+    font-size: 15px;
+    margin-left: 13px;
+    align-items: center;
+  }
+  .checkoutcont ul{
+    margin-top: 15px;
   }
 }
 
