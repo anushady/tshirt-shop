@@ -116,7 +116,7 @@ form {
   align-items: left;
   color: #000000;
   margin-left: -58px;
-  margin-top: 11px;
+  margin-top: 5px;
   
 }
 .checkoutcont ul li{
@@ -159,7 +159,7 @@ label{
 }
 @media (max-width: 500px) {
   .canv{
-    margin-top: -30px;
+    margin-top: -60px;
   }
   .logo img {
     width: 65px;
@@ -168,7 +168,7 @@ label{
     transform: translate(-50%, 0);
   }
   .checkoutcont {
-    bottom: 50px;
+    bottom: 30px;
   }
   .checkoutcont h1 {
     font-size: 23px;
@@ -224,11 +224,14 @@ label{
     margin-top: 0px;
     align-items: center;
   }
+  .checkoutcont h2{
+    margin-top: 2px;
+  }
   .checkoutcont ul{
-    margin-top: 5px;
+    margin-top: 2px;
   }
   .checkoutcont button{
-    margin-top: 5px;
+    margin-top: 2px;
   }
 }
 
