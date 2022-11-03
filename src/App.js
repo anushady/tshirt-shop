@@ -13,7 +13,7 @@ function Model(props) {
       <mesh
         geometry={nodes.OneGodobj.geometry}
         material={materials["Default.001"]}
-        position={[0.09, -0.27, -0.07]}
+        position={[0.0, -0.27, -0.07]}
         rotation={[0, -Math.PI / 2, 0]}
         scale={0.04}
       />
