@@ -51,10 +51,10 @@ function App() {
         
       </div>
       <div className="checkoutcont">
-        <h1>GOD TEE</h1>
+        {/* <h1>GOD TEE</h1> */}
         <h2>$50</h2>
         <div id="sizecont">
-          <label htmlFor="Sizes">Sizes:</label><br />
+          {/* <label htmlFor="Sizes">Sizes:</label><br /> */}
          
             <ul name="size" id="sizes">
               <li value="xs">XS</li>
