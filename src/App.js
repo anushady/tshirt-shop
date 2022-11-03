@@ -55,7 +55,7 @@ function App() {
         <h2>$50</h2>
         <div id="sizecont">
           <label htmlFor="Sizes">Sizes:</label><br />
-          <div id="select">
+         
             <ul name="size" id="sizes">
               <li value="xs">XS</li>
               <li value="s">S</li>
@@ -64,9 +64,6 @@ function App() {
               <li value="xl">XL</li>
               <li value="xxl">XXL</li>
             </ul>
- 
-          </div>
-          
         </div>
         <button>BUY</button>
       </div>

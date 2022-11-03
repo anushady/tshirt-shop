@@ -115,7 +115,8 @@ form {
   align-items: left;
   color: #171717;
   margin-left: -58px;
-  margin-top: 0px;
+  margin-top: 15px;
+  
 }
 .checkoutcont ul li{
   margin-left: 18px;
@@ -142,7 +143,8 @@ label{
 #sizecont {
   display: flex;
   justify-content: space-evenly;
-  padding: 2px 40px;
+  align-items: center;
+  padding: 0px 20px;
   border: 1px solid #c5c5c5;
 }
 .checkoutcont button:hover{
