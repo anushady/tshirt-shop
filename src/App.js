@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 import { OrbitControls } from "@react-three/drei";
 import "./App.css";
+import PayPal from "./components/PayPal";
 
 function Model(props) {
   const { nodes, materials } = useGLTF("/tshirt.glb");
   return (
-    
-    <group {...props} dispose={null}  >
-      
+    <group {...props} dispose={null}>
       <mesh
         geometry={nodes.OneGodobj.geometry}
         material={materials["Default.001"]}
@@ -20,52 +19,65 @@ function Model(props) {
     </group>
   );
 }
-function Hover(){
-
-var searchbar = document.getElementById("searchbar")
+function Hover() {
+  var searchbar = document.getElementById("searchbar");
 
   searchbar.style.display = "block";
-  console.log("mouseenter")
-
+  console.log("mouseenter");
 }
 
 function App() {
+  const [checkout, setCheckout] = useState(false);
   return (
     <>
       <div className="logo">
         <img src="logo.gif" alt="" />
       </div>
       <div id="iconcont">
-        <div id="cart" >
+        <div id="cart">
           <img src="Shopping.svg" alt="" />
         </div>
-        <div id="search" >
-        
+        <div id="search">
           <form action="">
-            
             {/* <button type="submit">Search</button> */}
-            <button type="submit" id="searchbtn" onMouseEnter={Hover}><img src="lens.png" alt="" /></button>
-            <input type="text" placeholder="Search.." name="search" id="searchbar" />
+            <button type="submit" id="searchbtn" onMouseEnter={Hover}>
+              <img src="lens.png" alt="" />
+            </button>
+            <input
+              type="text"
+              placeholder="Search.."
+              name="search"
+              id="searchbar"
+            />
           </form>
         </div>
-        
       </div>
       <div className="checkoutcont">
         {/* <h1>GOD TEE</h1> */}
         <h2>$50</h2>
         <div id="sizecont">
           {/* <label htmlFor="Sizes">Sizes:</label><br /> */}
-         
-            <ul name="size" id="sizes">
-              <li value="xs">XS</li>
-              <li value="s">S</li>
-              <li value="m">M</li>
-              <li value="l">L</li>
-              <li value="xl">XL</li>
-              <li value="xxl">XXL</li>
-            </ul>
+
+          <ul name="size" id="sizes">
+            <li value="xs">XS</li>
+            <li value="s">S</li>
+            <li value="m">M</li>
+            <li value="l">L</li>
+            <li value="xl">XL</li>
+            <li value="xxl">XXL</li>
+          </ul>
         </div>
-        <button>BUY</button>
+        {checkout ? (
+          <PayPal />
+        ) : (
+          <button
+            onClick={() => {
+              setCheckout(true);
+            }}
+          >
+            BUY
+          </button>
+        )}
       </div>
       <div className="canv">
         <Canvas>
@@ -75,15 +87,11 @@ function App() {
           <directionalLight intensity={0.9} />
           <directionalLight intensity={1} />
 
-          <Model scale={window.innerWidth>500?1 : 0.8} />
+          <Model scale={window.innerWidth > 500 ? 1 : 0.8} />
         </Canvas>
-        
       </div>
-      
     </>
-    
   );
-
 }
 
 export default App;
