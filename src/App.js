@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <div className="logo">
-        <img src="logo.PNG" alt="" />
+        <img src="logo.gif" alt="" />
       </div>
       <div id="iconcont">
         <div id="cart" >
