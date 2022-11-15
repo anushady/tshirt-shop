@@ -121,7 +121,7 @@ form {
   
 }
 .checkoutcont ul li{
-  margin-left: 15px;
+  margin-left: 15.1px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 21px;
   cursor: pointer;
@@ -129,7 +129,8 @@ form {
 }
 .checkoutcont button {
   z-index: 2;
-  padding: 13px 50px;
+
+  padding: 13px 5px;
   border-radius: 13px;
   background:#000000;
   color:#ffffff;
@@ -193,7 +194,7 @@ label{
   }
   .checkoutcont button {
     font-size: 15px;
-    padding:8px 70px;
+    /* padding: 8px 40px; */
   }
   #sizecont {
     padding: 1px 37px;
